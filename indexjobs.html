@@ -23,6 +23,8 @@
       width: 80px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       z-index: 1050;
       overflow: hidden;
     }
@@ -37,6 +39,7 @@
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
+      position: relative;
     }
 
     .sidebar .nav-item .nav-link {
@@ -48,7 +51,8 @@
       width: 100%;
       height: 56px;
       border-radius: 8px;
-      justify-content: space-between;
+      justify-content: center;
+      transition: all 0.3s;
     }
 
     .sidebar .nav-item .nav-link:hover {
@@ -71,6 +75,7 @@
 
     .sidebar .nav-item .text {
       display: none;
+      margin-left: 10px;
     }
 
     .sidebar:hover .nav-item .text {
@@ -129,6 +134,13 @@
       background-color: #495057;
       color: white;
     }
+
+    .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
@@ -173,10 +185,41 @@
       <a class="nav-link" href="#">
         <div class="icon-container">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-            <path d="M2 4.5a1 1 0 1 1 2 0v7a1 1 0 0 1-2 0v-7zM6 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM12.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM10 4.5c0-1.074 1.79-2 4-2s4 .926 4 2v7c0 1.074-1.79 2-4 2s-4-.926-4-2v-7z"/>
+            <path d="M2 4.5a1 1 0 1 1 2 0v7a1 1 0 0 1-2 0v-7zM6 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM12.5 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM10 4.5c0-1.38 1.12-2.5 2.5-2.5S15 3.12 15 4.5 13.88 7 12.5 7 10 5.88 10 4.5zM4.285 7.808a1 1 0 0 0-.4-.808h6.558a1 1 0 0 0-.4.808v6.384c0 .53.404.808.8.808.292 0 .522-.178.8-.396V7.808zm8.572 0a1 1 0 0 1 .4-.808v6.384c0 .53-.404.808-.8.808a.772.772 0 0 1-.8-.396V7.808z"/>
           </svg>
         </div>
-        <span class="text">Networking</span>
+        <span class="text">Candidatos </span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="#">
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+            <path d="M3.5 0a.5.5 0 0 0-.5.5V1h-1A2.5 2.5 0 0 0 0 3.5v10A2.5 2.5 0 0 0 2.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-10A2.5 2.5 0 0 0 13.5 1h-1V.5a.5.5 0 0 0-1 0V1h-6V.5a.5.5 0 0 0-1 0V1h-1V.5a.5.5 0 0 0-.5-.5zm10 2a.5.5 0 0 1 .5.5v10a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 12.5v-10a.5.5 0 0 1 .5-.5h11zM3.5 3a.5.5 0 0 0-.5.5v2.1a.5.5 0 0 0 1 0v-2.1a.5.5 0 0 0-.5-.5zm8 0a.5.5 0 0 0-.5.5v2.1a.5.5 0 0 0 1 0v-2.1a.5.5 0 0 0-.5-.5zm-8 5.5a.5.5 0 0 0-.5.5v2.1a.5.5 0 0 0 1 0v-2.1a.5.5 0 0 0-.5-.5zm8 0a.5.5 0 0 0-.5.5v2.1a.5.5 0 0 0 1 0v-2.1a.5.5 0 0 0-.5-.5zM8 7a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5A.5.5 0 0 1 8 7z"/>
+            <path d="M11.854 10.354a.5.5 0 0 1-.708 0L9.5 8.707l-.646.647a.5.5 0 1 1-.708-.708l1-1a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708z"/>
+          </svg>
+        </div>
+        <span class="text">Entrevistas</span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="#">
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+            <path d="M0 0h1v15h15v1H0V0zm10 10h3v4h-3v-4zm-5-5h3v9H5V5zm-5 8h3v1H0v-1zm10-4h3v4h-3v-4zM5 1h3v13H5V1zM0 13h3v2H0v-2zm10-4h3v4h-3v-4z"/>
+          </svg>
+        </div>
+        <span class="text">Analytics</span>
+      </a>
+    </div>
+    <div class="nav-item">
+      <a class="nav-link" href="#">
+        <div class="icon-container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+            <path d="M1 0a1 1 0 0 1 1-1h3.586a1 1 0 0 1 .707.293l4.914 4.914a1 1 0 0 1 .293.707V6.5a1 1 0 0 1-.293.707L3.414 16H1a1 1 0 0 1-1-1V0zm2 0H1v14h2.586L11 6.586V5.414L4.414 0H3zm9.75 4.5A2.5 2.5 0 1 1 15 7a2.5 2.5 0 0 1-2.25-2.5zM11 9h2v2a3 3 0 0 0 0-6V3a3 3 0 0 0 0 6V9zm0-5h1.5v1.5H11V4zm1.5 3.5H11V7h1.5v.5zm-.75-3a.5.5 0 0 1 .5-.5v1.5H11.75V4.5zM11 5h1.5V6H11V5zm2 2a.5.5 0 0 1-.5-.5V5h1.5v1.5h-1zm.5 3.5a.5.5 0 0 1-.5.5h-1.5V7h2v3zm-.5-1.5h1.5V7H13v1.5z"/>
+          </svg>
+        </div>
+        <span class="text">Ferramentas</span>
       </a>
     </div>
   </div>
