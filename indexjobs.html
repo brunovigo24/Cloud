@@ -21,21 +21,21 @@
         <span class="text">Criar</span>
       </a>
       <div class="submenu">
-        <a href="#" class="nav-link">Vaga</a>
+        <a href="#" class="nav-link"id="vaga-btn">Vaga</a>
         <a href="#" class="nav-link">Usuário</a>
       </div>
     </div>    
     <div class="nav-item">
-      <a class="nav-link" href="#">
+      <a class="nav-link vagas" href="#">
         <div class="icon-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
-            <path d="M6.5 0a.5.5 0 0 0-.5.5V1H3a2 2 0 0 0-2 2v1h14V3a2 2 0 0 0-2-2h-3V.5a.5.5 0 0 0-.5-.5h-4zM11 1v.5a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5V1h6z"/>
-            <path d="M0 6v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6H0zm11 2.5a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-1 0V9a.5.5 0 0 1 .5-.5zm-6 0a.5.5 0 0 1 .5.5v1.5a.5.5 0 0 1-1 0V9a.5.5 0 0 1 .5-.5z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+            <path d="M13 5a3 3 0 1 0-5.996-.227A5.5 5.5 0 0 0 1 10.5V12a.5.5 0 0 0 .5.5h6A4.5 4.5 0 0 1 12 10.43c0-.36-.073-.718-.21-1.057A3.01 3.01 0 0 0 13 5z"/>
+            <path d="M1 13v-2.5a4.5 4.5 0 0 1 8.9-.5H1zM13 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-3-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
           </svg>
         </div>
         <span class="text">Vagas</span>
       </a>
-    </div>
+    </div>        
     <div class="nav-item">
       <a class="nav-link" href="#">
         <div class="icon-container">
@@ -107,8 +107,9 @@
         <a class="nav-link" href="#">Sair</a>
       </div>
     </nav>
-    <div>
-      <!-- Conteúdo principal da página -->
+    <div class="main-content">
+      <!-- Conteúdo principal -->
+      <div id="vaga-list"></div>
     </div>
   </div>
 
